@@ -82,7 +82,7 @@ MailProvider.prototype.send = function(mail, fn) {
 
   this.transporter.sendMail(options, function(err, response) {
     if (err) {
-      return f(err);
+      return fn(err);
     }
 
     return fn(null, [{
