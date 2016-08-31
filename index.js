@@ -11,6 +11,11 @@ function MailProvider(smtpOptions, emailOptions) {
   }
 
   this.options = deepExtend({}, MailProvider.DEFAULT_OPTION, emailOptions);
+
+  if(!this.options.from || this.options.from.indexOf('<') === -1 || this.options.from.indexOf('>') === -1){
+    throw new Error('`from` option should be in RFC format "sender name <sender@email.com>"');
+  }
+
   this.transporter = nodemailer.createTransport(smtpTransport(smtpOptions));
 }
 
@@ -25,7 +30,7 @@ MailProvider.DEBUG_MODE = false;
  * @type {Object}
  */
 MailProvider.DEFAULT_OPTION = {
-  from: 'Transacemail',
+  // we force the user to specify a from
   subject: "node-transacemail-smtp"
 };
 
