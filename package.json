@@ -17,6 +17,9 @@
       "url": "https://github.com/RBaumier/node-transacemail-smtp/blob/master/LICENSE-MIT"
     }
   ],
+  "scripts":{
+    "test": "mocha -t 5000 test"
+  },
   "main": "index.js",
   "engines": {
     "node": ">= 0.6.0"

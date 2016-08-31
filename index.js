@@ -25,7 +25,7 @@ MailProvider.DEBUG_MODE = false;
  * @type {Object}
  */
 MailProvider.DEFAULT_OPTION = {
-  from: 'Transacemail',
+  from: 'transacemail@transacemail.com',
   subject: "node-transacemail-smtp"
 };
 
