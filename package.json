@@ -1,20 +1,20 @@
 {
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "transacemail-smtp",
   "description": "Transactional Email & Templated Email for NodeJS",
   "homepage": "https://github.com/RBaumier/node-transacemail-smtp",
   "author": "Francois-Guillaume Ribreau <npm@fgribreau.com> (http://fgribreau.com)",
   "repository": {
     "type": "git",
-    "url": "git://github.com/FGRibreau/node-transacemail-smtp.git"
+    "url": "git://github.com/RBaumier/node-transacemail-smtp.git"
   },
   "bugs": {
-    "url": "https://github.com/FGRibreau/node-transacemail-smtp/issues"
+    "url": "https://github.com/RBaumier/node-transacemail-smtp/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/FGRibreau/node-transacemail-smtp/blob/master/LICENSE-MIT"
+      "url": "https://github.com/RBaumier/node-transacemail-smtp/blob/master/LICENSE-MIT"
     }
   ],
   "main": "index.js",
