@@ -1,0 +1,44 @@
+{
+  "version": "0.2.0",
+  "name": "transacemail-smtp",
+  "description": "Transactional Email & Templated Email for NodeJS",
+  "homepage": "https://github.com/RBaumier/node-transacemail-smtp",
+  "author": "Francois-Guillaume Ribreau <npm@fgribreau.com> (http://fgribreau.com)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/FGRibreau/node-transacemail-smtp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FGRibreau/node-transacemail-smtp/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/FGRibreau/node-transacemail-smtp/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "dependencies": {
+    "deep-extend": "^0.4.1",
+    "lodash": "^4.6.1",
+    "nodemailer": "^2.5.0",
+    "nodemailer-smtp-transport": "^2.6.0"
+  },
+  "scripts": {
+    "test": "mocha *.test.js"
+  },
+  "keywords": [
+    "email",
+    "mail",
+    "transactional",
+    "smtp",
+    "transacemail"
+  ],
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
