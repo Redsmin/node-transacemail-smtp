@@ -93,6 +93,14 @@ MailProvider.prototype.send = function(mail, fn) {
 };
 
 /**
+ * verify smtp configuration
+ * @return {callback} f(err, {connected: Boolean})
+ */
+MailProvider.prototype.verify = function(f) {
+  this.transporter.verify(f);
+}
+
+/**
  * TransacEmail-SMTP factory
  * @param  {Object} smtpOptions        (see all options: https://github.com/nodemailer/nodemailer#set-up-smtp)
  * @param  {Object} emailOptions       Default send option
