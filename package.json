@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "deep-extend": "^0.4.1",
-    "lodash": "^4.6.1",
+    "lodash": "^4.16.0",
     "nodemailer": "^2.5.0",
     "nodemailer-smtp-transport": "^2.6.0"
   },
